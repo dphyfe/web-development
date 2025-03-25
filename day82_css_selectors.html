@@ -1,0 +1,109 @@
+<!-- Day 82: My CSS Selectors -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CSS Selectors</title>
+    <style>
+        /* My element selector */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* My ID selector */
+        #my-header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+
+        /* My class selector */
+        .my-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .my-box {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin: 10px 0;
+        }
+
+        /* My descendant selector */
+        .my-box h2 {
+            color: #333;
+            margin-top: 0;
+        }
+
+        /* My direct child selector */
+        .my-box > p {
+            margin: 5px 0;
+        }
+
+        /* My adjacent sibling selector */
+        h2 + p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        /* My attribute selector */
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+        }
+
+        /* My pseudo-class */
+        a:hover {
+            text-decoration: underline;
+            color: #0066cc;
+        }
+
+        /* My pseudo-element */
+        .my-text::first-line {
+            font-weight: bold;
+        }
+
+        /* My multiple selectors */
+        h1, h2, h3 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header id="my-header">
+        <h1>My CSS Selectors Tutorial</h1>
+    </header>
+
+    <div class="my-container">
+        <div class="my-box">
+            <h2>My Element Selectors</h2>
+            <p>My paragraph styled with element selector.</p>
+        </div>
+
+        <div class="my-box">
+            <h2>My Class Selectors</h2>
+            <p>My paragraph in a box using class selector.</p>
+        </div>
+
+        <div class="my-box">
+            <h2>My Advanced Selectors</h2>
+            <p>My paragraph demonstrating pseudo-classes.</p>
+            <a href="#">My link example</a>
+        </div>
+
+        <div class="my-box">
+            <h2>My Form Inputs</h2>
+            <input type="text" placeholder="My text input">
+            <input type="email" placeholder="My email input">
+        </div>
+
+        <div class="my-text">
+            <p>My text demonstrating pseudo-elements like first-line styling.</p>
+        </div>
+    </div>
+</body>
+</html>
