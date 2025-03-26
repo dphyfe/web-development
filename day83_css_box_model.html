@@ -1,0 +1,131 @@
+<!-- Day 83: My CSS Box Model -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CSS Box Model</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        .my-box-demo {
+            /* My content */
+            width: 200px;
+            height: 100px;
+            
+            /* My padding (inside, between content and border) */
+            padding: 20px;
+            
+            /* My border */
+            border: 3px solid #333;
+            
+            /* My margin (outside, between elements) */
+            margin: 20px;
+            
+            background-color: lightblue;
+        }
+
+        .my-padding-example {
+            padding: 15px;
+            background-color: #e0e0e0;
+            margin: 10px 0;
+        }
+
+        .my-margin-example {
+            margin-top: 30px;
+            margin-right: 20px;
+            margin-bottom: 30px;
+            margin-left: 20px;
+            background-color: #fff;
+            padding: 10px;
+        }
+
+        .my-border-examples {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: white;
+        }
+
+        .my-border-solid {
+            border: 2px solid black;
+            padding: 15px;
+            margin: 10px 0;
+        }
+
+        .my-border-dashed {
+            border: 2px dashed red;
+            padding: 15px;
+            margin: 10px 0;
+        }
+
+        .my-border-dotted {
+            border: 2px dotted blue;
+            padding: 15px;
+            margin: 10px 0;
+        }
+
+        .my-border-rounded {
+            border: 2px solid #333;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px 0;
+        }
+
+        .my-box-sizing-demo {
+            display: flex;
+            gap: 20px;
+        }
+
+        .my-content-box {
+            box-sizing: content-box;
+            width: 200px;
+            padding: 20px;
+            border: 2px solid black;
+            background-color: lightgreen;
+        }
+
+        .my-border-box {
+            box-sizing: border-box;
+            width: 200px;
+            padding: 20px;
+            border: 2px solid black;
+            background-color: lightyellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>My CSS Box Model</h1>
+
+    <div class="my-box-demo">
+        My box model demo
+    </div>
+
+    <h2>My Padding Example</h2>
+    <div class="my-padding-example">
+        My paragraph with padding creates space inside the element.
+    </div>
+
+    <h2>My Margin Example</h2>
+    <div class="my-margin-example">
+        My paragraph with margins creates space around the element.
+    </div>
+
+    <h2>My Border Examples</h2>
+    <div class="my-border-examples">
+        <div class="my-border-solid">My solid border</div>
+        <div class="my-border-dashed">My dashed border</div>
+        <div class="my-border-dotted">My dotted border</div>
+        <div class="my-border-rounded">My rounded border</div>
+    </div>
+
+    <h2>My Box Sizing</h2>
+    <div class="my-box-sizing-demo">
+        <div class="my-content-box">My content-box (width doesn't include padding)</div>
+        <div class="my-border-box">My border-box (width includes padding)</div>
+    </div>
+</body>
+</html>
