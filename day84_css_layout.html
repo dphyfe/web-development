@@ -1,0 +1,148 @@
+<!-- Day 84: My CSS Layout (Display and Positioning) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CSS Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        /* My display block */
+        .my-block {
+            display: block;
+            width: 100%;
+            background-color: lightblue;
+            margin: 10px 0;
+            padding: 10px;
+        }
+
+        /* My display inline */
+        .my-inline {
+            display: inline;
+            background-color: lightyellow;
+            margin: 0 5px;
+            padding: 5px;
+        }
+
+        /* My display inline-block */
+        .my-inline-block {
+            display: inline-block;
+            width: 150px;
+            background-color: lightgreen;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        /* My flexbox container */
+        .my-flex-container {
+            display: flex;
+            gap: 10px;
+            margin: 20px 0;
+            background-color: white;
+            padding: 10px;
+        }
+
+        .my-flex-item {
+            flex: 1;
+            background-color: lightcoral;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* My grid container */
+        .my-grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .my-grid-item {
+            background-color: lightsteelblue;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* My positioning */
+        .my-relative {
+            position: relative;
+            top: 10px;
+            left: 10px;
+            background-color: #fff;
+            border: 2px solid #333;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        .my-absolute-container {
+            position: relative;
+            background-color: #e0e0e0;
+            height: 150px;
+            margin: 10px 0;
+        }
+
+        .my-absolute {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: lightcoral;
+            padding: 10px;
+        }
+
+        .my-fixed {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            z-index: 100;
+        }
+    </style>
+</head>
+<body>
+    <h1>My CSS Layout Techniques</h1>
+
+    <h2>My Display Property</h2>
+    <div class="my-block">My block element (full width)</div>
+    <span class="my-inline">My</span>
+    <span class="my-inline">inline</span>
+    <span class="my-inline">elements</span>
+    
+    <div class="my-inline-block">My inline-block 1</div>
+    <div class="my-inline-block">My inline-block 2</div>
+
+    <h2>My Flexbox Layout</h2>
+    <div class="my-flex-container">
+        <div class="my-flex-item">My flex item 1</div>
+        <div class="my-flex-item">My flex item 2</div>
+        <div class="my-flex-item">My flex item 3</div>
+    </div>
+
+    <h2>My Grid Layout</h2>
+    <div class="my-grid-container">
+        <div class="my-grid-item">My grid 1</div>
+        <div class="my-grid-item">My grid 2</div>
+        <div class="my-grid-item">My grid 3</div>
+        <div class="my-grid-item">My grid 4</div>
+        <div class="my-grid-item">My grid 5</div>
+        <div class="my-grid-item">My grid 6</div>
+    </div>
+
+    <h2>My Positioning</h2>
+    <div class="my-relative">My relative positioned element</div>
+    
+    <div class="my-absolute-container">
+        <div class="my-absolute">My absolute positioned</div>
+        Container for absolute positioning
+    </div>
+
+    <div class="my-fixed">My fixed position</div>
+</body>
+</html>
