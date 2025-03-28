@@ -1,0 +1,141 @@
+<!-- Day 85: My Responsive Design -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Responsive Design</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #555;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .my-content {
+            background-color: white;
+            padding: 20px;
+        }
+
+        .my-sidebar {
+            background-color: white;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* My mobile styles (small screens) */
+        @media screen and (max-width: 768px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+
+            nav a {
+                float: none;
+            }
+
+            body {
+                font-size: 14px;
+            }
+        }
+
+        /* My extra small screens */
+        @media screen and (max-width: 480px) {
+            header h1 {
+                font-size: 20px;
+                margin: 0;
+            }
+
+            nav a {
+                padding: 10px;
+                font-size: 12px;
+            }
+
+            main {
+                padding: 10px;
+                gap: 10px;
+            }
+        }
+
+        /* My large screens */
+        @media screen and (min-width: 1200px) {
+            main {
+                max-width: 1400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Responsive Website</h1>
+    </header>
+
+    <nav>
+        <a href="#home">My Home</a>
+        <a href="#about">My About</a>
+        <a href="#contact">My Contact</a>
+    </nav>
+
+    <main>
+        <section class="my-content">
+            <h2>My Main Content</h2>
+            <p>My responsive design adapts to different screen sizes.</p>
+            <p>My layout uses CSS media queries to adjust at breakpoints.</p>
+            <p>My sidebar moves below content on mobile devices.</p>
+            <p>My navigation links stack vertically on small screens.</p>
+        </section>
+
+        <aside class="my-sidebar">
+            <h3>My Sidebar</h3>
+            <p>My sidebar content appears here on desktop.</p>
+            <p>My moves below on mobile screens.</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>My footer &copy; 2025 Responsive Design</p>
+    </footer>
