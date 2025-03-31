@@ -1,0 +1,158 @@
+<!-- Day 86: My Flexbox Deep Dive -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Flexbox Deep Dive</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        .my-flex-container {
+            display: flex;
+            gap: 10px;
+            margin: 20px 0;
+            padding: 10px;
+            background-color: white;
+            border: 1px solid #ccc;
+        }
+
+        .my-item {
+            background-color: lightcoral;
+            padding: 20px;
+            text-align: center;
+            flex: 1;
+        }
+
+        /* My flex-direction examples */
+        .my-row {
+            flex-direction: row;
+        }
+
+        .my-column {
+            flex-direction: column;
+        }
+
+        .my-row-reverse {
+            flex-direction: row-reverse;
+        }
+
+        /* My justify-content (main axis) */
+        .my-flex-start {
+            justify-content: flex-start;
+        }
+
+        .my-center {
+            justify-content: center;
+        }
+
+        .my-flex-end {
+            justify-content: flex-end;
+        }
+
+        .my-space-between {
+            justify-content: space-between;
+        }
+
+        .my-space-around {
+            justify-content: space-around;
+        }
+
+        /* My align-items (cross axis) */
+        .my-align-start {
+            align-items: flex-start;
+            height: 150px;
+        }
+
+        .my-align-center {
+            align-items: center;
+            height: 150px;
+        }
+
+        .my-align-end {
+            align-items: flex-end;
+            height: 150px;
+        }
+
+        /* My flex properties */
+        .my-flex-1 {
+            flex: 1;
+            background-color: lightblue;
+        }
+
+        .my-flex-2 {
+            flex: 2;
+            background-color: lightgreen;
+        }
+
+        .my-flex-grow {
+            flex-grow: 1;
+        }
+
+        .my-flex-shrink {
+            flex-shrink: 1;
+        }
+
+        .my-flex-basis {
+            flex-basis: 150px;
+        }
+
+        /* My flex-wrap */
+        .my-wrap {
+            flex-wrap: wrap;
+        }
+
+        .my-wrap-item {
+            flex: 0 1 150px;
+        }
+
+        .my-gap-example {
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Flexbox Deep Dive</h1>
+
+    <h2>My Flex Direction</h2>
+    <div class="my-flex-container my-row">
+        <div class="my-item">My 1</div>
+        <div class="my-item">My 2</div>
+        <div class="my-item">My 3</div>
+    </div>
+
+    <div class="my-flex-container my-column">
+        <div class="my-item">My 1</div>
+        <div class="my-item">My 2</div>
+        <div class="my-item">My 3</div>
+    </div>
+
+    <div class="my-flex-container my-row-reverse">
+        <div class="my-item">My 1</div>
+        <div class="my-item">My 2</div>
+        <div class="my-item">My 3</div>
+    </div>
+
+    <h2>My Justify Content (Main Axis)</h2>
+    <div class="my-flex-container my-flex-start">
+        <div class="my-item" style="flex: 0;">My 1</div>
+        <div class="my-item" style="flex: 0;">My 2</div>
+    </div>
+
+    <div class="my-flex-container my-space-between">
+        <div class="my-item" style="flex: 0;">My 1</div>
+        <div class="my-item" style="flex: 0;">My 2</div>
+    </div>
+
+    <div class="my-flex-container my-space-around">
+        <div class="my-item" style="flex: 0;">My 1</div>
+        <div class="my-item" style="flex: 0;">My 2</div>
+    </div>
+
+    <h2>My Align Items (Cross Axis)</h2>
+    <div class="my-flex-container my-align-start">
+        <div class="my-item">My 1</div>
