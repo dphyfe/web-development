@@ -1,0 +1,191 @@
+<!-- Day 87: My Grid Deep Dive -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Grid Deep Dive</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        /* My basic grid */
+        .my-grid-basic {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            margin: 20px 0;
+            padding: 10px;
+            background-color: white;
+        }
+
+        /* My grid with specific widths */
+        .my-grid-widths {
+            display: grid;
+            grid-template-columns: 200px 1fr 150px;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        /* My grid with repeat */
+        .my-grid-repeat {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        /* My grid with auto-fit */
+        .my-grid-autofit {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        /* My grid with rows */
+        .my-grid-rows {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 100px 150px 100px;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        /* My grid with areas */
+        .my-grid-areas {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-areas:
+                "header header header"
+                "sidebar main main"
+                "footer footer footer";
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .my-header {
+            grid-area: header;
+        }
+
+        .my-sidebar {
+            grid-area: sidebar;
+        }
+
+        .my-main {
+            grid-area: main;
+        }
+
+        .my-footer {
+            grid-area: footer;
+        }
+
+        /* My grid item spanning */
+        .my-span-2 {
+            grid-column: span 2;
+        }
+
+        .my-span-row-2 {
+            grid-row: span 2;
+        }
+
+        /* My grid justification */
+        .my-grid-justify {
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            justify-items: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .my-grid-item {
+            background-color: lightcoral;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .my-grid-header {
+            background-color: lightblue;
+        }
+
+        .my-grid-sidebar {
+            background-color: lightgreen;
+        }
+
+        .my-grid-main {
+            background-color: lightyellow;
+        }
+
+        .my-grid-footer {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Grid Deep Dive</h1>
+
+    <h2>My Basic Grid</h2>
+    <div class="my-grid-basic">
+        <div class="my-grid-item">My 1</div>
+        <div class="my-grid-item">My 2</div>
+        <div class="my-grid-item">My 3</div>
+        <div class="my-grid-item">My 4</div>
+        <div class="my-grid-item">My 5</div>
+        <div class="my-grid-item">My 6</div>
+    </div>
+
+    <h2>My Grid with Specific Widths</h2>
+    <div class="my-grid-widths">
+        <div class="my-grid-item">My 200px</div>
+        <div class="my-grid-item">My 1fr flex</div>
+        <div class="my-grid-item">My 150px</div>
+    </div>
+
+    <h2>My Grid with Repeat</h2>
+    <div class="my-grid-repeat">
+        <div class="my-grid-item">My 1</div>
+        <div class="my-grid-item">My 2</div>
+        <div class="my-grid-item">My 3</div>
+        <div class="my-grid-item">My 4</div>
+    </div>
+
+    <h2>My Grid with Auto-fit</h2>
+    <div class="my-grid-autofit">
+        <div class="my-grid-item">My 1</div>
+        <div class="my-grid-item">My 2</div>
+        <div class="my-grid-item">My 3</div>
+        <div class="my-grid-item">My 4</div>
+        <div class="my-grid-item">My 5</div>
+    </div>
+
+    <h2>My Grid with Rows</h2>
+    <div class="my-grid-rows">
+        <div class="my-grid-item">My 1</div>
+        <div class="my-grid-item">My 2</div>
+        <div class="my-grid-item">My 3</div>
+        <div class="my-grid-item">My 4</div>
+        <div class="my-grid-item">My 5</div>
+        <div class="my-grid-item">My 6</div>
+    </div>
+
+    <h2>My Grid with Areas</h2>
+    <div class="my-grid-areas">
+        <div class="my-header my-grid-header">My Header</div>
+        <div class="my-sidebar my-grid-sidebar">My Sidebar</div>
+        <div class="my-main my-grid-main">My Main Content</div>
+        <div class="my-footer my-grid-footer">My Footer</div>
+    </div>
+
+    <h2>My Grid with Spanning</h2>
+    <div class="my-grid-basic">
+        <div class="my-grid-item my-span-2">My spans 2 columns</div>
+        <div class="my-grid-item">My 3</div>
+        <div class="my-grid-item">My 4</div>
+        <div class="my-grid-item">My 5</div>
+        <div class="my-grid-item">My 6</div>
+    </div>
+</body>
+</html>
