@@ -1,0 +1,172 @@
+<!-- Day 89: My CSS Colors and Backgrounds -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CSS Colors and Backgrounds</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        .my-demo-box {
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 5px;
+            color: white;
+        }
+
+        /* My color formats */
+        .my-hex {
+            background-color: #FF6B6B;
+        }
+
+        .my-rgb {
+            background-color: rgb(70, 130, 180);
+        }
+
+        .my-rgba {
+            background-color: rgba(255, 165, 0, 0.7);
+        }
+
+        .my-hsl {
+            background-color: hsl(200, 100%, 50%);
+        }
+
+        .my-named {
+            background-color: lightcoral;
+            color: black;
+        }
+
+        /* My gradient backgrounds */
+        .my-linear-gradient {
+            background: linear-gradient(90deg, #FF6B6B 0%, #4ECDC4 100%);
+        }
+
+        .my-radial-gradient {
+            background: radial-gradient(circle, #FFE66D, #95E1D3);
+            color: #333;
+        }
+
+        .my-diagonal-gradient {
+            background: linear-gradient(45deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .my-gradient-3-stops {
+            background: linear-gradient(to right, red, yellow, green);
+        }
+
+        /* My background properties */
+        .my-background-image {
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"><rect width="40" height="40" fill="%23333"/><circle cx="20" cy="20" r="15" fill="%23fff"/></svg>');
+            background-repeat: repeat;
+            background-size: 40px;
+            height: 150px;
+            color: #333;
+        }
+
+        .my-background-position {
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><rect width="100" height="100" fill="%23667eea"/><text x="50" y="50" text-anchor="middle" dy="0.3em" fill="white">My</text></svg>');
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 150px;
+        }
+
+        .my-background-size-cover {
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"><rect width="200" height="200" fill="%23FF6B6B"/></svg>');
+            background-size: cover;
+            background-position: center;
+            height: 150px;
+        }
+
+        .my-background-size-contain {
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"><rect width="200" height="200" fill="%234ECDC4"/></svg>');
+            background-size: contain;
+            background-position: center;
+            height: 150px;
+        }
+
+        /* My background attachment */
+        .my-background-fixed {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"><rect width="40" height="40" fill="%23667eea"/></svg>');
+            background-attachment: fixed;
+            height: 200px;
+            color: white;
+            overflow-y: scroll;
+        }
+
+        /* My color overlays */
+        .my-overlay {
+            background: linear-gradient(rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0.5)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"><rect width="40" height="40" fill="%23333"/></svg>');
+            height: 150px;
+        }
+
+        /* My multiple backgrounds */
+        .my-multiple-bg {
+            background: linear-gradient(45deg, rgba(255, 0, 0, 0.3), transparent), 
+                        radial-gradient(circle at 20% 80%, rgba(0, 255, 0, 0.3), transparent);
+            height: 150px;
+        }
+
+        .my-section {
+            background-color: white;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>My CSS Colors and Backgrounds</h1>
+
+    <div class="my-section">
+        <h2>My Color Formats</h2>
+        <div class="my-demo-box my-hex">My HEX color (#FF6B6B)</div>
+        <div class="my-demo-box my-rgb">My RGB color (70, 130, 180)</div>
+        <div class="my-demo-box my-rgba">My RGBA with transparency</div>
+        <div class="my-demo-box my-hsl">My HSL color (200, 100%, 50%)</div>
+        <div class="my-demo-box my-named">My named color (lightcoral)</div>
+    </div>
+
+    <div class="my-section">
+        <h2>My Linear Gradients</h2>
+        <div class="my-demo-box my-linear-gradient">My left to right gradient</div>
+        <div class="my-demo-box my-diagonal-gradient">My diagonal 45-degree gradient</div>
+        <div class="my-demo-box my-gradient-3-stops">My gradient with 3 color stops</div>
+    </div>
+
+    <div class="my-section">
+        <h2>My Radial Gradients</h2>
+        <div class="my-demo-box my-radial-gradient">My radial gradient from center</div>
+    </div>
+
+    <div class="my-section">
+        <h2>My Background Images</h2>
+        <div class="my-demo-box my-background-image">My repeated background pattern</div>
+    </div>
+
+    <div class="my-section">
+        <h2>My Background Position</h2>
+        <div class="my-demo-box my-background-position">My centered background</div>
+    </div>
+
+    <div class="my-section">
+        <h2>My Background Size</h2>
+        <div class="my-demo-box my-background-size-cover">My background cover</div>
+        <div class="my-demo-box my-background-size-contain">My background contain</div>
+    </div>
+
+    <div class="my-section">
+        <h2>My Color Overlays</h2>
+        <div class="my-demo-box my-overlay">My overlay effect</div>
+    </div>
+
+    <div class="my-section">
+        <h2>My Multiple Backgrounds</h2>
+        <div class="my-demo-box my-multiple-bg">My multiple background layers</div>
+    </div>
+</body>
+</html>
