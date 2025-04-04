@@ -1,0 +1,149 @@
+<!-- Day 90: My CSS Transforms and Transitions -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CSS Transforms and Transitions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        .my-container {
+            background-color: white;
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 5px;
+            perspective: 1000px;
+        }
+
+        .my-demo-item {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            display: inline-block;
+            margin: 20px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* My scale transform */
+        .my-scale:hover {
+            transform: scale(1.5);
+        }
+
+        /* My rotate transform */
+        .my-rotate:hover {
+            transform: rotate(45deg);
+        }
+
+        /* My skew transform */
+        .my-skew:hover {
+            transform: skew(10deg, -10deg);
+        }
+
+        /* My translate transform */
+        .my-translate:hover {
+            transform: translate(20px, -20px);
+        }
+
+        /* My 3D transforms */
+        .my-3d-item {
+            transform-style: preserve-3d;
+            perspective: 1000px;
+        }
+
+        .my-rotateX:hover {
+            transform: rotateX(45deg);
+        }
+
+        .my-rotateY:hover {
+            transform: rotateY(45deg);
+        }
+
+        .my-rotateZ:hover {
+            transform: rotateZ(45deg);
+        }
+
+        /* My transitions */
+        .my-transition {
+            transition: all 0.3s ease;
+        }
+
+        .my-transition-duration {
+            transition: all 0.5s ease-in-out;
+        }
+
+        .my-transition-timing-linear {
+            transition: all 1s linear;
+        }
+
+        .my-transition-timing-ease {
+            transition: all 1s ease;
+        }
+
+        .my-transition-timing-ease-in {
+            transition: all 1s ease-in;
+        }
+
+        .my-transition-timing-ease-out {
+            transition: all 1s ease-out;
+        }
+
+        /* My combined transforms */
+        .my-combined {
+            transition: all 0.5s ease;
+        }
+
+        .my-combined:hover {
+            transform: scale(1.2) rotate(10deg) translateY(-10px);
+        }
+
+        /* My opacity transition */
+        .my-opacity {
+            opacity: 0.5;
+            transition: opacity 0.3s ease;
+        }
+
+        .my-opacity:hover {
+            opacity: 1;
+        }
+
+        /* My color transition */
+        .my-color-transition {
+            background-color: #667eea;
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+
+        .my-color-transition:hover {
+            background-color: #764ba2;
+        }
+
+        h2 {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>My CSS Transforms and Transitions</h1>
+
+    <div class="my-container">
+        <h2>My 2D Transforms (hover to see)</h2>
+        <div class="my-demo-item my-transition my-scale">My scale</div>
+        <div class="my-demo-item my-transition my-rotate">My rotate</div>
+        <div class="my-demo-item my-transition my-skew">My skew</div>
+        <div class="my-demo-item my-transition my-translate">My translate</div>
+    </div>
+
+    <div class="my-container">
+        <h2>My 3D Transforms (hover to see)</h2>
+        <div class="my-demo-item my-transition my-rotateX">My rotateX</div>
+        <div class="my-demo-item my-transition my-rotateY">My rotateY</div>
+        <div class="my-demo-item my-transition my-rotateZ">My rotateZ</div>
+    </div>
