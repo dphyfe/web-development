@@ -1,0 +1,107 @@
+<!-- Day 95: My Bootstrap Navbar and Layout -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bootstrap Navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- My navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">My Brand</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">My Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">My About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">My Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">My Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <!-- My jumbotron -->
+        <div class="bg-primary text-white p-5 mb-4">
+            <h1 class="display-4">My Welcome Page</h1>
+            <p class="lead">My Bootstrap layout with navbar and sections.</p>
+        </div>
+
+        <div class="container">
+            <!-- My layout with sidebar -->
+            <div class="row mb-5">
+                <div class="col-md-8">
+                    <h2>My Main Content</h2>
+                    <p>My main content area with article or sections.</p>
+                    <p>My Bootstrap makes it easy to create responsive layouts with the grid system.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>My Sidebar</h3>
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">My Link 1</a>
+                        <a href="#" class="list-group-item list-group-item-action">My Link 2</a>
+                        <a href="#" class="list-group-item list-group-item-action">My Link 3</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- My sections with cards -->
+            <div class="row mb-5">
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">My Section 1</h5>
+                            <p class="card-text">My content for section 1.</p>
+                            <a href="#" class="btn btn-primary">My Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">My Section 2</h5>
+                            <p class="card-text">My content for section 2.</p>
+                            <a href="#" class="btn btn-primary">My Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">My Section 3</h5>
+                            <p class="card-text">My content for section 3.</p>
+                            <a href="#" class="btn btn-primary">My Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- My footer -->
+            <footer class="bg-light text-center py-4 mt-5">
+                <p>&copy; 2025 My Website. My all rights reserved.</p>
+                <p>
+                    <a href="#" class="me-3">My Privacy</a>
+                    <a href="#" class="me-3">My Terms</a>
+                    <a href="#">My Contact</a>
+                </p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
